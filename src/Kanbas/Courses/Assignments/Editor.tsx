@@ -82,6 +82,28 @@ export default function AssignmentEditor() {
                         <input type="date" id="wd-due-date"/>
                     </td>
                 </tr>
+                <tr>
+                    <td></td>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label htmlFor="wd-available-from">Available from</label>
+                            </td>
+                            <td>
+                                <label htmlFor="wd-available-until">Until</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date" id="wd-available-from"/>
+                            </td>
+                            <td>
+                                <input type="date" id="wd-available-until"/>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
             </table>
         </div>
 );
