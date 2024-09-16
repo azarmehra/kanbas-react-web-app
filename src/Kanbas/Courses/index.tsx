@@ -1,8 +1,9 @@
-import { Routes, Route, Navigate } from "react-router";
+import {Navigate, Route, Routes} from "react-router";
 import Home from "./Home";
 import Modules from "./Modules";
 import CoursesNavigation from "./Navigation";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 
 export default function Courses() {
   return (
@@ -22,7 +23,7 @@ export default function Courses() {
                 <Route path="Assignments" element={<Assignments />} />
                 <Route
                   path="Assignments/:aid"
-                  element={<h2>Assignment Editor</h2>}
+                  element={<AssignmentEditor />}
                 />
                 <Route path="People" element={<h2>People</h2>} />
               </Routes>
