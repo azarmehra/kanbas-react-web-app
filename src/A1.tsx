@@ -6,6 +6,8 @@ export default function A1(){
             <h1>Amir Azarmehr, CS 5610, Section 03 </h1>
             <Link to="/Kanbas/"> Kanbas</Link>
             <br/>
+            <Link to="/Kanbas/Courses/1234/">3.6 Implementing the Course Home Screen (Course Status Bar)</Link>
+            <br/>
             <Link to="/Kanbas/Courses/1234/Assignments">3.7 Assignments Screen</Link>
             <br/>
             <Link to="/Kanbas/Courses/1234/Assignments/123">3.8 Assignment Editor Screen</Link>
