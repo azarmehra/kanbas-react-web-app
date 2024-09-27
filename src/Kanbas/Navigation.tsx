@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 export default function KanbasNavigation() {
   return (
     <div id="wd-kanbas-navigation">
-        <Link to="/">
-            Back To Landing Page
-        </Link>
-        <br/>
+        {/*<Link to="/">*/}
+        {/*    Back To Landing Page*/}
+        {/*</Link>*/}
+        {/*<br/>*/}
       <a href="https://www.northeastern.edu/" id="wd-neu-link" target="_blank">
         Northeastern
       </a>
