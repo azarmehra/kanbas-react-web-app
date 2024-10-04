@@ -20,7 +20,7 @@ export default function KanbasNavigation() {
             <Link to="/Kanbas/Account" id="wd-account-link"
                   className={`list-group-item text-center border-0 
                    ${pathname.includes("Kanbas/Account") ? "bg-white text-danger" : "bg-black text-white"}`}>
-                <FaRegCircleUser className="fs-1 text text-white"/><br/>
+                <FaRegCircleUser className={`fs-1 text ${pathname.includes("Kanbas/Account") ? "text-red": "text-white"}`}/><br/>
                 Account </Link><br/>
             <Link to="/Kanbas/Dashboard" id="wd-dashboard-link"
                   className={`list-group-item text-center border-0 
