@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function Profile() {
     return (
-        <div id="wd-profile-screen">
+        <div id="wd-profile-screen" style={{maxWidth: "500px"}} className="row">
             <h3>Profile</h3>
             <input className="form-control mb-1" id="wd-username" value="alice" placeholder="username"/>
             <input
@@ -23,7 +23,7 @@ export default function Profile() {
                 <option value="STUDENT">Student</option>
             </select>
             <br/>
-            <a href="#/Kanbas/Account/Signin" className="btn btn-secondary">
+            <a href="#/Kanbas/Account/Signin" className="btn btn-danger">
                 Sign Out
             </a>
         </div>
