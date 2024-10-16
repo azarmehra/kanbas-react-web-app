@@ -23,15 +23,17 @@ export default function KanbasNavigation() {
       style={{ width: 120 }}
     >
       <a
-        className="border-0 text-center bg-black text-white list-group-item"
-        href="https://www.northeastern.edu/"
-        id="wd-neu-link"
-        target="_blank"
+          className="border-0 text-center bg-black text-white list-group-item"
+          href="https://www.northeastern.edu/"
+          id="wd-neu-link"
+          target="_blank"
+
       >
+        <img src="/images/NEU.png" width="75px"/>
         Northeastern
       </a>
       <Link
-        to="/Kanbas/Account"
+          to="/Kanbas/Account"
         className={`list-group-item text-center border-0 bg-black
             ${
               pathname.includes("Account")

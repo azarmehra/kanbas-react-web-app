@@ -1,30 +1,14 @@
 import { Link } from "react-router-dom";
+import React from "react";
 export default function Signin() {
   return (
-    <div id="wd-signin-screen">
-      <h1>Sign in</h1>
-      <input
-        id="wd-username"
-        placeholder="username"
-        className="form-control mb-2"
-      />
-      <input
-        id="wd-password"
-        placeholder="password"
-        type="password"
-        className="form-control mb-2"
-      />
-      <Link
-        id="wd-signin-btn"
-        to="/Kanbas/Dashboard"
-        className="btn btn-primary w-100"
-      >
-        Sign in
-      </Link>
-      <br />
-      <Link id="wd-signup-link" to="/Kanbas/Account/Signup">
-        Sign up
-      </Link>
-    </div>
+      <div id="wd-signin-screen" style={{maxWidth: "500px"}} className="row">
+          <h3>Sign in</h3>
+          <input className="form-control mb-1" id="wd-username" placeholder="username"/>
+          <input className="form-control mb-1" id="wd-password" placeholder="password" type="password"/>
+          <a href="#/Kanbas/" className="btn btn-primary">
+              Sign in
+          </a>
+      </div>
   );
 }
