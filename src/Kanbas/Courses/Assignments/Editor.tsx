@@ -1,14 +1,22 @@
+import {useParams} from "react-router-dom";
+import * as db from "../../Database"
+
 export default function AssignmentEditor() {
+    const { cid, aid } = useParams();
+    const assignment = db.assignments.find( (assignment) => assignment._id === aid && assignment.course === cid )
+    const {title, description} = assignment || { title: "", description: "" };
+
+
     return (
         <div id="wd-assignments-editor" style={{maxWidth: "800px"}}>
             <div className="mb-3 row">
                 <label htmlFor="wd-name" className="col-sm-3 col-form-label text-sm-end">Assignment Name</label>
                 <div className="col-sm-9">
-                    <input type="text" className="form-control" id="wd-name" value="A1 - ENV + HTML"/>
+                    <input type="text" className="form-control" id="wd-name" value={title}/>
                 </div>
             </div>
             <textarea className="form-control" id="wd-description">
-            The assignment is available online Submit a link to the landing page of
+            {description}
             </textarea>
             <br/>
             <div className="mb-3 row">
