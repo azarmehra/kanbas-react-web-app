@@ -25,49 +25,57 @@ import TernaryOperator from "./TernaryOperator";
 import TodoList from "./todos/TodoList";
 import VariablesAndConstants from "./VariablesAndConstants";
 import VariableTypes from "./VariableTypes";
+import FindFunction from "./FindFunction";
+import IndexFunction from "./IndexFunction";
+import FilterFunction from "./FilterFunction";
+import JsonStringify from "./JsonStringify";
 
 export default function Lab3() {
-  return (
-    <div id="wd-lab3">
-      <h3>Lab 3</h3>
-      <VariablesAndConstants />
-      <VariableTypes />
-      <BooleanVariables />
-      <TernaryOperator />
-      <ConditionalOutputIfElse />
-      <ConditionalOutputInline />
-      <LegacyFunctions />
-      <ArrowFunctions />
-      <ImpliedReturn />
-      <TemplateLiterals />
-      <SimpleArrays />
-      <ArrayIndexAndLength />
-      <AddingAndRemovingToFromArrays />
-      <ForLoops />
-      <MapFunction />
-      <House />
-      <TodoList />
-      <Spreading />
-      <Destructing />
-      <FunctionDestructing />
-      <DestructingImports />
-      <Classes />
-      <Styles />
-      <Add a={2} b={3} />
-      <h4>
-        <Highlight>Square of 4</Highlight>
-      </h4>
-      Square of 4 = <Square>4</Square>
-      <br />
-      Square of 8 = <Square>8</Square>
-      <hr />
-      <Highlight>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipitratione
-        eaque illo minus cum, saepe totam vel nihil repellat nemo explicabo
-        excepturi consectetur. Modi omnis minus sequi maiores, provident
-        voluptates.
-      </Highlight>
-      <PathParameters />
-    </div>
-  );
+    return (
+        <div id="wd-lab3">
+            <h3>Lab 3</h3>
+            <VariablesAndConstants/>
+            <VariableTypes/>
+            <BooleanVariables/>
+            <TernaryOperator/>
+            <ConditionalOutputIfElse/>
+            <ConditionalOutputInline/>
+            <LegacyFunctions/>
+            <ArrowFunctions/>
+            <ImpliedReturn/>
+            <TemplateLiterals/>
+            <SimpleArrays/>
+            <ArrayIndexAndLength/>
+            <AddingAndRemovingToFromArrays/>
+            <ForLoops/>
+            <MapFunction/>
+            <FindFunction/>
+            <IndexFunction/>
+            <FilterFunction/>
+            <JsonStringify/>
+            <House/>
+            <TodoList/>
+            <Spreading/>
+            <Destructing/>
+            <FunctionDestructing/>
+            <DestructingImports/>
+            <Classes/>
+            <Styles/>
+            <Add a={2} b={3}/>
+            <h4>
+                <Highlight>Square of 4</Highlight>
+            </h4>
+            Square of 4 = <Square>4</Square>
+            <br/>
+            Square of 8 = <Square>8</Square>
+            <hr/>
+            <Highlight>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipitratione
+                eaque illo minus cum, saepe totam vel nihil repellat nemo explicabo
+                excepturi consectetur. Modi omnis minus sequi maiores, provident
+                voluptates.
+            </Highlight>
+            <PathParameters/>
+        </div>
+    );
 }
