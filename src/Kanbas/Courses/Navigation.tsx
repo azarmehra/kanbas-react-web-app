@@ -40,14 +40,14 @@ export default function CoursesNavigation() {
 
       <Link
         className="list-group-item border-0 text-danger"
-        to="/Kanbas/Courses/1234/Quizzes"
+        to={`/Kanbas/Courses/${cid}/Quizzes`}
       >
         Quizzes
       </Link>
 
       <Link
         className="list-group-item border-0 text-danger"
-        to="/Kanbas/Courses/1234/Grades"
+        to={`/Kanbas/Courses/${cid}/Grades`}
       >
         Grades
       </Link>
