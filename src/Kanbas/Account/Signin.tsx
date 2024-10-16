@@ -6,7 +6,7 @@ export default function Signin() {
           <h3>Sign in</h3>
           <input className="form-control mb-1" id="wd-username" placeholder="username"/>
           <input className="form-control mb-1" id="wd-password" placeholder="password" type="password"/>
-          <a href="#/Kanbas/" className="btn btn-primary">
+          <a href="#/Kanbas/Dashboard" className="btn btn-primary">
               Sign in
           </a>
       </div>
