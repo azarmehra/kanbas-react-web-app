@@ -1,63 +1,21 @@
-import { Link, useParams } from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
+
 export default function CoursesNavigation() {
-  const { cid } = useParams();
-  return (
-    <div className="wd list-group rounded-0" id="wd-courses-navigation">
-      <Link
-        className="list-group-item active border-0"
-        to={`/Kanbas/Courses/${cid}/Home`}
-      >
-        Home
-      </Link>
+    const {cid} = useParams();
+    const links = ["Home", "Modules", "Piazza", "Zoom", "Assignments", "Quizzes", "Grades", "People"];
+    const { pathname } = useLocation();
 
-      <Link
-        className="list-group-item  border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Modules`}
-      >
-        Modules
-      </Link>
+    return (
 
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Piazza`}
-      >
-        Piazza
-      </Link>
-
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Zoom`}
-      >
-        Zoom
-      </Link>
-
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Assignments`}
-      >
-        Assignments
-      </Link>
-
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Quizzes`}
-      >
-        Quizzes
-      </Link>
-
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/Grades`}
-      >
-        Grades
-      </Link>
-
-      <Link
-        className="list-group-item border-0 text-danger"
-        to={`/Kanbas/Courses/${cid}/People`}
-      >
-        People
-      </Link>
-    </div>
-  );
+        <div className="wd list-group rounded-0" id="wd-courses-navigation">
+            {links.map((link) => (
+                <Link
+                    className={`list-group-item ${pathname.includes(link) ? "active" : "text-danger"} border-0`}
+                    to={`/Kanbas/Courses/${cid}/${link}`}
+                >
+                    {link}
+                </Link>
+            ))}
+        </div>
+    );
 }
