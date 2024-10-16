@@ -3,8 +3,10 @@ import {FaSearch} from "react-icons/fa";
 import {BsGripVertical} from "react-icons/bs";
 import LessonControlButtons from "../Modules/LessonControlButtons";
 import {BiBible} from "react-icons/bi";
+import {useParams} from "react-router-dom";
 
 export default function Assignments() {
+    const { cid } = useParams();
     return (
         <div id="wd-assignments">
             <div className="d-flex justify-content-between align-items-center mb-2">
@@ -53,7 +55,7 @@ export default function Assignments() {
                         <div>
                             <a
                                 className="wd-assignment-link h5 text-decoration-none"
-                                href="#/Kanbas/Courses/1234/Assignments/123"
+                                href={`#/Kanbas/Courses/${cid}/Assignments/123`}
                             >
                                 A1 - ENV + HTML
                             </a>
@@ -75,7 +77,7 @@ export default function Assignments() {
                         <div>
                             <a
                                 className="wd-assignment-link h5 text-decoration-none"
-                                href="#/Kanbas/Courses/1234/Assignments/123"
+                                href={`#/Kanbas/Courses/${cid}/Assignments/123`}
                             >
                                 A2 - CSS + BOOTSTRAP
                             </a>
@@ -97,7 +99,7 @@ export default function Assignments() {
                         <div>
                             <a
                                 className="wd-assignment-link h5 text-decoration-none"
-                                href="#/Kanbas/Courses/1234/Assignments/123"
+                                href={`#/Kanbas/Courses/${cid}/Assignments/123`}
                             >
                                 A3 - JAVASCRIPT + REACT
                             </a>
